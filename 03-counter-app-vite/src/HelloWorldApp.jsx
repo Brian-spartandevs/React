@@ -7,6 +7,6 @@
 
 export const HelloWorldApp = () => {
   return (
-    <div>HelloWorldApp</div>
+    <h1>HelloWorldApp</h1>
   )
 }
