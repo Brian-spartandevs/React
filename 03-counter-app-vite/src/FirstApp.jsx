@@ -1,5 +1,9 @@
+import PropTypes from 'prop-types'
+
 export const FirstApp = ({title, subTitle}) => {
-  console.log(title)
+
+  // console.log(props)
+
   return (
     <>
     <h1>{ title }</h1>
@@ -7,4 +11,9 @@ export const FirstApp = ({title, subTitle}) => {
     <p>{subTitle}</p>
     </>
   )
+}
+
+FirstApp.propTypes = {
+  title: PropTypes.string,
+  subTitle: PropTypes.number
 }
