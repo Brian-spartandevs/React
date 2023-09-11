@@ -1,14 +1,26 @@
 import PropTypes from 'prop-types';
 
 export const CounterApp = ({value}) => {
+
+    const handleAdd = (e) => {
+        // console.log(e)
+        console.log("+1")
+        value = 1000;
+        console.log(value)
+    }
+
     return (
         <>
         <h1>CounterApp</h1>
-        <p>{value}</p>
+        <h2> { value } </h2>
+
+        <button onClick={ handleAdd } >
+            +1
+        </button>
         </>
     )
 }
 
-CounterApp.propType = {
+CounterApp.propTypes = {
     value: PropTypes.number.isRequired,
 }
