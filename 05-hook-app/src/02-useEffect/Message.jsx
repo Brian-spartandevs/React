@@ -1,12 +1,20 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export const Message = () => {
 
     useEffect(() => {
-      console.log('Message Mouted')
+
+      const [coords, setCoords] = useState({x:0,y:0})
+
+      const onMouseMove = ({x,y}) => {
+        // const coords = {x,y};
+        setCoords({x,y})
+      }
+
+      window.addEventListener("mousemove", onMouseMove)
       
       return () => {
-          console.log('Message UnMouted')
+        // window.removeEventListener("mousemove", onMouseMove)
       }
     }, [])
     
@@ -16,7 +24,9 @@ export const Message = () => {
     <>
         <h2>Usuario ya existe</h2>
 
-
+          {
+            JSON.stringify(coords)
+          }
     </>
   )
 }
