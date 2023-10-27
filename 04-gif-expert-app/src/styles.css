@@ -1,6 +1,6 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(15, 15, 15);
   }
   
   body {
@@ -23,8 +23,14 @@
   }
   
   h3 {
-    font-size: 3rem;
+    color: white;
+    background-color: transparent;
+    font-size: 6rem;
     margin-bottom: 5px;
+  }
+
+  h1 {
+    color: white;
   }
   
   .card-grid {
@@ -61,3 +67,10 @@
   .card img {
     width: 100%;
   }
+
+
+/* aquii */
+
+
+            
+            

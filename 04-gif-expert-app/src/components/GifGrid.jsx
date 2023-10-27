@@ -7,7 +7,7 @@ const {images, isLoading} = useFetchGifs(category)
 
   return (
     <>
-        <h3>{category}</h3>
+        <h3 className="animate__animated animate__bounceInRight">{category}</h3>
         {
           isLoading && (<h2>Cargando...</h2>) 
         }
