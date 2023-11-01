@@ -20,6 +20,7 @@ export const AddCategory = ({onNewCategory}) => {
   return (
     <form onSubmit={onSubmit}>
     <input type="text"
+    className="animate__animated animate__bounceInRight"
     placeholder="Buscar gifs"
     value={inputValue}
     onChange={onInputChange} />
